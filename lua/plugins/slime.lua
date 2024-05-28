@@ -38,18 +38,16 @@ return {
     ]])
   end,
   config = function()
-    vim.keymap.set({ "n", "i", "v" }, "<c-cr>", function()
+    vim.keymap.set({ "n", "i" }, "<c-cr>", function()
       local mode = vim.api.nvim_get_mode().mode
 
       vim.cmd([[ w ]])
       if mode == "n" or mode == "i" then
         if vim.bo.filetype ~= "python" then
-          vim.cmd([[ SlimeLineSend ]])
+          vim.cmd([[ call slime#send_lines(v:count1) ]])
         else
-          vim.cmd([[ SlimeSendCell ]])
+          vim.cmd([[ call slime#send_cell() ]])
         end
-      elseif mode == "v" then
-        vim.cmd([[ SlimeRegionSend]])
       end
     end, { silent = true })
   end,
