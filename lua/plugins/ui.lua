@@ -24,7 +24,7 @@ return {
   },
   -- Configure LazyVim to load vscode
   {
-    "LazyVim/LazyVimw",
+    "LazyVim/LazyVim",
     opts = {
       colorscheme = "tokyonight-storm",
     },
