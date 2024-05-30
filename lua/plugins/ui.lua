@@ -7,12 +7,26 @@ return {
   --     lazy = false,
   -- },
 
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000, enabled = true, lazy = false },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000, enabled = false, lazy = false },
+  {
+    "folke/tokyonight.nvim",
+    name = "tokyonight",
+    priority = 1000,
+    enabled = true,
+    lazy = false,
+    opts = {
+      styles = {
+        comments = { italic = true },
+        keywords = { bold = true },
+        functions = { italic = true },
+      },
+    },
+  },
   -- Configure LazyVim to load vscode
   {
-    "LazyVim/LazyVim",
+    "LazyVim/LazyVimw",
     opts = {
-      colorscheme = "catppuccin-mocha",
+      colorscheme = "tokyonight-storm",
     },
   },
 }
