@@ -1,5 +1,6 @@
 return {
   "jpalardy/vim-slime",
+  version = "*",
   enabled = true,
   init = function()
     vim.g.slime_target = "neovim"

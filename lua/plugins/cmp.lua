@@ -1,5 +1,6 @@
 return {
   "hrsh7th/cmp-cmdline",
+  version = "*",
   config = function()
     local cmp = require("cmp")
     cmp.setup.cmdline(":", {
