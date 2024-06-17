@@ -36,4 +36,8 @@ return {
       require("inlay-hints").setup()
     end,
   },
+  -- {
+  --   "mrcjkb/rustaceanvim",
+  --   enabled = false,
+  -- },
 }
