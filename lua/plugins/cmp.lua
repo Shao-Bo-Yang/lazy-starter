@@ -10,7 +10,7 @@ return {
       }, {
         { name = "cmdline" },
       }),
-      matching = { disallow_symbol_nonprefix_matching = false },
+      -- matching = { disallow_symbol_nonprefix_matching = false },
     })
   end,
 }
