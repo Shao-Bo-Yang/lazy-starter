@@ -7,12 +7,12 @@ return {
   --     lazy = false,
   -- },
 
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000, enabled = false, lazy = false },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000, enabled = true, lazy = false },
   {
     "folke/tokyonight.nvim",
     name = "tokyonight",
     priority = 1000,
-    enabled = true,
+    enabled = false,
     lazy = false,
     opts = {
       styles = {

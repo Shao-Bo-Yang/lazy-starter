@@ -4,6 +4,11 @@ return {
     version = "*",
     opts = {
       inlay_hints = { enabled = true },
+      setup = {
+        rust_analyzer = function()
+          return true
+        end,
+      },
       servers = {
         basedpyright = {
           settings = {
@@ -22,13 +27,6 @@ return {
                   reportMissingSuperCall = "warning",
                 },
               },
-            },
-          },
-        },
-        rust_analyzer = {
-          settings = {
-            ["rust-analyzer"] = {
-              procMacro = { enable = true },
             },
           },
         },
