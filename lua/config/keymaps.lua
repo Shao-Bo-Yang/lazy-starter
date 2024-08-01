@@ -3,5 +3,5 @@
 -- Add any additional keymaps here
 -- Toggle Term
 vim.keymap.set({ "n" }, "<c-/>", function()
-  vim.cmd([[ ToggleTerm ]])
+    vim.cmd([[ ToggleTerm ]])
 end, { desc = "Toggle Term", silent = true })
