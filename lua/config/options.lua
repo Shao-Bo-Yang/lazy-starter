@@ -9,5 +9,4 @@ vim.opt.relativenumber = false
 vim.g.lazyvim_python_lsp = "basedpyright"
 vim.opt.linebreak = true
 vim.opt.wrap = true
-vim.opt.spell = true
 -- vim.g.lazyvim_python_lsp = "pyright"
