@@ -10,7 +10,7 @@ local function clangd_cmd()
     "--header-insertion=iwyu",
     "--completion-style=detailed",
     "--function-arg-placeholders",
-    "--fallback-style=llvm",
+    "--fallback-style=google",
   }
   if query_driver then
     table.insert(cmd, "--query-driver=" .. query_driver)
