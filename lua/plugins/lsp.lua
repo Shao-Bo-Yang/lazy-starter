@@ -2,14 +2,8 @@ local function clangd_cmd()
   local query_driver = os.getenv("QUERY_DRIVER")
   local cmd = {
     "clangd",
-    "--background-index",
     "--clang-tidy",
-    "--all-scopes-completion",
     "-j=4",
-    "--pch-storage=memory",
-    "--header-insertion=iwyu",
-    "--completion-style=detailed",
-    "--function-arg-placeholders",
     "--fallback-style=google",
   }
   if query_driver then
