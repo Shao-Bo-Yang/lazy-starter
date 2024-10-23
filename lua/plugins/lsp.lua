@@ -4,7 +4,7 @@ local function clangd_cmd()
     "clangd",
     "--clang-tidy",
     -- "-j=4",
-    "--fallback-style=google",
+    "--fallback-style=microsoft",
   }
   if query_driver then
     table.insert(cmd, "--query-driver=" .. query_driver)
