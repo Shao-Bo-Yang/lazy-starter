@@ -3,7 +3,7 @@ local function clangd_cmd()
   local cmd = {
     "clangd",
     "--clang-tidy",
-    -- "-j=4",
+    "-j=4",
     "--fallback-style=microsoft",
   }
   if query_driver then
