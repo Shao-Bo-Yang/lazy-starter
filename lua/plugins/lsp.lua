@@ -12,6 +12,11 @@ local function clangd_cmd()
   return cmd
 end
 
+local function get_python_path()
+  local python_path = io.popen("which python"):read()
+  return python_path
+end
+
 return {
   {
     "neovim/nvim-lspconfig",
@@ -26,6 +31,9 @@ return {
       servers = {
         basedpyright = {
           settings = {
+            python = {
+              pythonPath = get_python_path(),
+            },
             basedpyright = {
               analysis = {
                 typeCheckingMode = "standard",
