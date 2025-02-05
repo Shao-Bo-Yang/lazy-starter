@@ -36,7 +36,7 @@ return {
             },
             basedpyright = {
               analysis = {
-                typeCheckingMode = "standard",
+                typeCheckingMode = "basic",
                 autoImportCompletions = true,
                 useLibraryCodeForTypes = true,
                 reportIncompatibleMethodOverride = "no",
