@@ -10,6 +10,6 @@ vim.g.lazyvim_python_lsp = "basedpyright"
 vim.g.snacks_animate = false
 -- vim.g.lazyvim_python_lsp = "pyright"
 vim.opt.linebreak = true
-vim.opt.wrap = false
+vim.opt.wrap = true
 
 -- vim.g.lazyvim_python_lsp = "pyright"
